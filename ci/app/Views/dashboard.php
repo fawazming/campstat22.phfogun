@@ -12,7 +12,7 @@
 					<h5 class="box-title text-center">Total Delegates</h5>
 					<div class="row">
 						<div class="col text-center">
-							<div class="easypie" data-percent="<?=(($total_del/1000)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?= ($total_del).'+'.$manual['total_del'] ?></span></div>
+							<div class="easypie" data-percent="<?=(($total_del/1000)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?= ($total_del).'+'.$manual['total_del'] ?> = <?= ($total_del)+$manual['total_del'] ?></span></div>
 							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Overall</h6>
 						</div>
 					</div>
