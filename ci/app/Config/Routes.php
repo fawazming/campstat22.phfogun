@@ -40,6 +40,8 @@ $routes->get('/manual1', 'Home::manual1');
 $routes->post('/manual2', 'Home::manual2');
 $routes->get('/admin/logout', 'Home::logout');
 
+$routes->get('/cert/(:any)', 'Home::cert/$1');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

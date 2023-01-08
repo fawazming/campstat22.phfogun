@@ -173,6 +173,12 @@ class Home extends BaseController
 		}
 	}
 
+    public function cert($name)
+    {
+        // var_dump($name);
+        echo view('cert', ['name'=>$name]);
+    }
+
 	//--------------------------------------------------------------------
 
 }
