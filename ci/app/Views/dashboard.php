@@ -39,6 +39,44 @@
 		</div>
 	</div>
 	<div class="row">
+	    <div class="col-lg-6 col-sm-12">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="box-title text-center">District A By Gender</h5>
+					<div class="row">
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($damale/400)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($damale) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Male</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dafemale/600)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($dafemale) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Female
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-sm-12">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="box-title text-center">District B By Gender</h5>
+					<div class="row">
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dbmale/400)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dbmale)?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Male</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dbfemale/600)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($dbfemale) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Female
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
 		
 	<div class="col-lg-12">
 			<div class="card">
@@ -103,6 +141,95 @@
 						<div class="col text-center">
 							<div class="easypie" data-percent="<?=(($workers/500)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($workers).'+'.$manual['workers'] ?></span></div>
 							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Workers
+							</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($workers/500)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($official)?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Camp Official
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="box-title text-center">Total By Category (District A)</h5>
+					<div class="row">
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dapsec/50)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dapsec) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Primary Sch.</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dajsec/150)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dajsec) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Junior Sec.</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dassec/150)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dassec) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Senior Sec.</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dasch_leaver/150)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dasch_leaver) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">School Leaver</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dahi/300)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($dahi) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Higher Institution
+							</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($daworkers/500)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($daworkers) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Workers
+							</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($daworkers/500)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($daofficial)?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Camp Official
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="box-title text-center">Total By Category (District B)</h5>
+					<div class="row">
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dapsec/50)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dbpsec) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Primary Sch.</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dajsec/150)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dbjsec) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Junior Sec.</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dassec/150)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dbssec) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Senior Sec.</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dasch_leaver/150)*100)?>" data-bar-color="#00bcd4" data-size="110" data-line-width="8"><span class="easypie-data text-info" style="font-size:32px;"><?=($dbsch_leaver) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">School Leaver</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($dahi/300)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($dbhi) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Higher Institution
+							</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($daworkers/500)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($dbworkers) ?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Workers
+							</h6>
+						</div>
+						<div class="col text-center">
+							<div class="easypie" data-percent="<?=(($daworkers/500)*100)?>" data-bar-color="#2949ef" data-size="110" data-line-width="8"><span class="easypie-data text-primary" style="font-size:32px;"><?=($dbofficial)?></span></div>
+							<h6 class="mb-0 mt-3 font-15 text-muted font-weight-normal">Camp Official
 							</h6>
 						</div>
 					</div>
