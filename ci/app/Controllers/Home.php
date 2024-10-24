@@ -20,10 +20,12 @@ class Home extends BaseController
 		$session = session();
 		$uname = $this->request->getPost('username');
 		$password = $this->request->getPost('password');
+		$year = $this->request->getPost('year');
 
 		if ($uname == 'phfogun' && $password == 'pmc2022') {
 			$newdata = array(
 				'admin' => $uname,
+				'year' => $year,
 				'admin_logged_in' => TRUE
 			);
 			$session->set($newdata);
@@ -48,9 +50,15 @@ class Home extends BaseController
 	{
 		// echo('dashboard');	
 		$logged_in = session()->get('admin_logged_in');
-		$Delegates = new \App\Models\Delegates();
+		
 		$ManualDel = new \App\Models\ManualDel();
 		if ($logged_in) {
+			$year = session()->get('year');
+			if($year == 'current'){
+				$Delegates = new \App\Models\Delegates();
+			}else{
+				$Delegates = new \App\Models\DelegatesOld();
+			}
 
 			$data = [
 				'total_del' => $Delegates->whereNotIn('ref',['m'])->countAllResults(),
@@ -139,7 +147,12 @@ class Home extends BaseController
 	{
 		$logged_in = session()->get('admin_logged_in');
 		if ($logged_in) {
-			$Delegates = new \App\Models\Delegates();
+			$year = session()->get('year');
+			if($year == 'current'){
+				$Delegates = new \App\Models\Delegates();
+			}else{
+				$Delegates = new \App\Models\DelegatesOld();
+			}$Delegates = new \App\Models\Delegates();
 
 			$data = array(
 				'delegates' => $Delegates->findAll(),
@@ -148,6 +161,30 @@ class Home extends BaseController
 
 			echo view('header');
 			echo view('print', $data);
+			echo view('footer');
+		} else {
+			echo view('login');
+		}
+	}
+
+	public function printo()
+	{
+		$logged_in = session()->get('admin_logged_in');
+		if ($logged_in) {
+			$year = session()->get('year');
+			if($year == 'current'){
+				$Delegates = new \App\Models\Delegates();
+			}else{
+				$Delegates = new \App\Models\DelegatesOld();
+			}$Delegates = new \App\Models\Delegates();
+
+			$data = array(
+				'delegates' => $Delegates->where('category','Camp_Official')->find(),
+				'type' => 'Electronic'
+			);
+
+			echo view('header');
+			echo view('printo', $data);
 			echo view('footer');
 		} else {
 			echo view('login');

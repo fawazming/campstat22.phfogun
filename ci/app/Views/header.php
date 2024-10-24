@@ -79,6 +79,8 @@
 					</li>
 					<li class="nav-item "><a class="header-menu-toggle dropdown-toggle no-arrow" href="<?= base_url('printe') ?>">Electronic Printer</a>
 					</li>
+					<li class="nav-item "><a class="header-menu-toggle dropdown-toggle no-arrow" href="<?= base_url('printo') ?>">Officials Printer</a>
+					</li>
 					<li class="nav-item "><a class="header-menu-toggle dropdown-toggle no-arrow" href="<?= base_url('manual') ?>">Manual Upload</a>
 					</li>
 				</ul>

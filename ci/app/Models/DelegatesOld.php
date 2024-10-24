@@ -3,9 +3,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Delegates extends Model
+class DelegatesOld extends Model
 {
-    protected $table = 'delegates24';
+    protected $table = 'delegates23';
     protected $primaryKey = 'id';
 
     protected $returnType = 'array';
