@@ -171,7 +171,7 @@ class Home extends BaseController
 				$Delegates = new \App\Models\Delegates();
 			}else{
 				$Delegates = new \App\Models\DelegatesOld();
-			}$Delegates = new \App\Models\Delegates();
+			}
 
 			$data = array(
 				'delegates' => $Delegates->findAll(),
@@ -195,7 +195,7 @@ class Home extends BaseController
 				$Delegates = new \App\Models\Delegates();
 			}else{
 				$Delegates = new \App\Models\DelegatesOld();
-			}$Delegates = new \App\Models\Delegates();
+			}
 
 			$data = array(
 				'delegates' => $Delegates->where('category','Camp_Official')->find(),
